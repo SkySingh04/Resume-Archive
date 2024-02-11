@@ -1,0 +1,293 @@
+%------------------------
+% Resume Template
+% Author : Akash Singh
+% Github : https://github.com/Akash-Singh04
+% License : DSCE
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Akash Singh}} & Email: \href{mailto:akashsingh2210670@gmail.com}{akashsingh2210670@gmail.com}\\
+  \href{https://meetakash.vercel.app/}{Portfolio} & Mobile:~~~+91-938-259-8086 \\
+  \href{https://github.com/Akash-Singh04}{Github: Akash-Singh04} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+% \section{~~About Me}
+%   "It is never too late to be what you might have been."-Famously said by George Eliot, I tend to wrap my personality and routine around those words. While Efficient Development and Problem Solving are skills that remain on the tip of my fingers, What sets me apart are my Effective Communication Skills and Team Leading Qualities combined with my desire to learn new things while I grab every opportunity that comes my way.
+
+%   I have keen interest in computer science and public speaking. I enjoy socialising and building connections with people in my free time. I'm also interested in web development and data science, while also learning new technologies everyday. When I'm not tinkering with my laptop, I enjoy participating in debates, hackathons and other social events that further help me build my personality and improve my network
+	    
+\vspace{-5pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Dayananda Sagar College Of Engineering}{Bengaluru, India}
+      {Bachelor of Engineering-Computer Science And Engineering;}{2022 - 2026}
+      \vspace{-5pt}
+    \resumeSubheading
+      {Delhi Public School}{Siliguri, India}
+      {12th Standard;  CGPA: 9.6}{2020-2022}
+      \vspace{-5pt}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-10pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, Go}
+     
+    \textbf{Frameworks And Libraries}{: NodeJS, ExpressJS, React, Redux, NextJs, TailWind} 
+     
+     \textbf{Databases And Tools}{: MongoDB, MySQL, SQLite, Git, Github, Firebase} \\
+    
+    }}
+ \end{itemize}
+ \vspace{-13pt}
+%-----------Open Source-----------------
+\section{Open Source Contribution}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Keploy Inc.}{\href{https://github.com/keploy/keploy/pulls/Akash-Singh04}{Contributions}}
+            {Open Source Contributor: Go, Bash, KTests, KMocks}{}
+            \resumeItemListStart
+                \item Keploy is a next-gen \textbf{E2E testing tool} that provides an easy way to capture and generate \textbf{KTests} and \textbf{KMocks} from real \textbf{API calls}.
+                \item Implemented \textbf{Keploy CLI update} command, enabling seamless tool updates across platforms.
+                \item Added \textbf{version flag} to Keploy CLI for easy retrieval of the installed Keploy version.
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------Experience-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+\resumeSubheading
+		{Intern @Bolesale}{January 2024 - Present}
+		{Full Stack Developer : React, Firebase, Redux, Zustand}{}
+		\resumeItemListStart
+        \item Contributed to building robust applications using React, Firebase, and Redux, emphasizing \textbf{RESTful} architecture and efficient \textbf{CRUD} operations for seamless user experiences.
+        \item Collaborated within a multidisciplinary team to ensure adherence to \textbf{ACID} principles, ensuring data integrity and scalability while implementing \textbf{Version Control} with Git for effective collaboration.
+		\resumeItemListEnd
+    
+ \resumeSubheading
+		{Intern @CodingZen}{December 2023 -  Present}
+		{Online Teaching (Full Stack)}{}
+		\resumeItemListStart
+        \item Spearheaded comprehensive virtual instruction in Full Stack Development at CodingZen, providing insightful guidance on front-end and back-end technologies to a diverse cohort of students.
+        \item Developed and delivered a dynamic curriculum, integrating real-world projects and interactive sessions to facilitate hands-on learning experiences, enabling students to grasp complex concepts effectively.
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\vspace{-13pt}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Quiz Quest}$|$\emph{NextJs,Typescript,Firebase} 
+$|$
+\textmd{\href{https://github.com/Akash-Singh04/QuizQuest}{GitHub}}
+$|$
+\textmd{\href{https://quiz-quest-delta.vercel.app/}{Deployment}}
+}{
+\vspace{-5pt}
+\begin{itemize}
+\item The project facilitates administrators in attempting quizzes and managing quiz data, including scores, completion times, and specific quiz details along with allowing users to \textbf{create quizzes from Excel Sheets}.
+\item Developed with \textbf{Next.js} and \textbf{TypeScript}, the project incorporates server-side rendering, seamless routing, strong typing, and improved code maintainability for an enhanced user experience and deployed on \textbf{Vercel}.
+\item Integrated \textbf{Firebase} for \textbf{real-time database management} and \textbf{user authentication}, leveraging \textbf{Firestore} for data storage, \textbf{Firebase Authentication} for secure access,and implementing \textbf{Admin Dashboard}.
+\end{itemize}
+}
+\vspace{-5pt}
+\resumeSubItem{\textbf{EduSync}$|$\emph{NextJs,Typescript,Firebase, EdgeStore ,Flask} 
+$|$
+\textmd{\href{https://github.com/Akash-Singh04/EduSync}{GitHub}}
+$|$
+\textmd{\href{https://edu-sync-phi.vercel.app/}{Deployment}}
+}{
+\vspace{-5pt}
+\begin{itemize}
+\item Orchestrated the fusion of \textbf{Next.js}, \textbf{Firebase}, and \textbf{TypeScript} to develop an innovative tutoring platform. Delivered a dynamic user experience while ensuring code integrity and scalability and deployed on \textbf{Vercel}.
+% \item Leveraged Falcon 7B's advanced AI capabilities to enhance the platform with state-of-the-art \textbf{natural language processing} and integrated it into an \textbf{NLP Chatbot}.
+\item Engineered a robust backend utilizing Flask, EdgeStore, and Firebase. Orchestrated \textbf{RESTful APIs}, proficient \textbf{CRUD operations}, and optimized data storage with \textbf{User Authentication} And \textbf{User Roles}.
+\end{itemize}
+}
+\vspace{-5pt}
+
+\resumeSubItem{\textbf{Motion Amplification Video (MAV)} $|$\emph{MERN,Tailwind,AWS}
+$|$
+\textmd{\href{https://github.com/Akash-Singh04/Motion-Amplification-Video}{GitHub}}
+$|$
+\textmd{\href{https://youtu.be/ygeVFEa4_oo}{Demo Video}
+}
+}{
+\vspace{-5pt}
+\begin{itemize}
+\item Developed a pioneering \textbf{cloud-based solution} for revolutionizing vibration analysis via processing,extracting,amplifying and replaying motion features frame by frame, unveiling micro-scale defects.
+\item Implemented a cloud-based \textbf{dashboard} using \textbf{AWS S3 Bucket} and \textbf{AWS Cloudfront} for users to upload video clips and view processed results, enhancing accessibility from any location.
+% \item Contributed to the development of the \textbf{user interface (UI)} to provide essential data outputs such as \textbf{time waveforms} and \textbf{FFT spectra} for in-depth vibration analysis.
+\end{itemize}
+\vspace{-5pt}
+}
+
+
+% \resumeSubItem{\textbf{ClassSnap} $|$\emph{Selenium Web Driver,MERN,Python}
+% $|$
+% \textmd{\href{https://github.com/Akash-Singh04/ClassSnap}{GitHub}}
+% $|$
+% \textmd{\href{https://youtu.be/c7Uv2kCQrRw}{Demo Video}}
+% }{
+% \vspace{-5pt}
+% \begin{itemize}
+% \item Developed an innovative web application, \textbf{ClassSnap}, that automates note generation for online classes thus enhancing learning and improving student retention and attentiveness.
+% \item \textbf{Automates} note-taking using automated text extraction via \textbf{OCR Engine} from lectures' video and audio content and then summarizing and preparing PDF Notes via \textbf{Google's Pegasus Model}.
+% \item \textbf{Lead} a team of 4 people, organizing regular team meetings and collaborating on \textbf{Github} while contributing on the \textbf{Selenium Web Driver} and the \textbf{User Dashboard} for easy access of generated notes.
+% \end{itemize}
+% }
+% \vspace{-5pt}
+
+% \resumeSubItem{\textbf{SleepSense} $|$\emph{Python,Flask,Tensorflow}
+% $|$
+% \textmd{\href{https://github.com/Akash-Singh04/SleepSense}{GitHub}}
+% }{
+% \vspace{-5pt}
+% \begin{itemize}
+% \item Created \textbf{SleepSense}, a  vigilant guardian against driver fatigue leveraging machine learning combined with image processing techniques to detect driver drowsiness and provide real-time alerts.
+% \item \textbf Build a \textbf{User Interface} using Flask for users to access our ML model from anywhere and provide real time protection and monitoring.
+% \item Lead a team of 4 people and prepared prototype of project during \textbf{Hackman V.4} and placed \textbf{Top 10} collaborating on Github and improvising upon feedback received from mentors.
+% \end{itemize}
+% }
+% \vspace{-5pt}
+
+% \resumeSubItem{\textbf{Gen-Z Diaries}  $|$\emph{Python,Flask,SQLite,BootStrap}
+% $|$
+% \textmd{\href{https://github.com/Akash-Singh04/Gen-Z-Diaries}{GitHub}}
+% }{
+% \vspace{-5pt}
+% \begin{itemize}
+% \item Crafted a fully responsive \textbf{Blog Website} catering to Generation Z, enabling users to compose, comment on, and delete blog posts via \textbf{REST API}.
+% \item Enhances digital self-expression and engagement among Gen-Z users, facilitated by seamless frontend-backend interactivity.
+
+% \end{itemize}
+% }
+% \vspace{-5pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------Awards-----------------
+\section{Achievements}
+\begin{description}[font=$\bullet$]
+\item {Placed 2nd Place Among 83 other teams in Engigma 2023 Hackathon -December 2023}
+\vspace{-5pt}
+\item {Placed Top 10 Among 48 other teams in Hackmanv6 Hackathon -July 2023}
+\vspace{-5pt}
+\item {First Place in Web Wizards Web Development Contest - February, 2023 }
+\vspace{-5pt}
+
+\end{description}
+
+% %-----------LICENSE AND CERTIFICATIONS-----------------
+% \vspace{-5pt}
+% \section{LICENSE AND CERTIFICATIONS}
+% \resumeSubHeadingListStart
+% \resumeSubItem {\href{http://ude.my/UC-2f7e34d5-d73f-44bd-886c-4ae2fb354b88}{The Complete 2023 Web Development Bootcamp - April 2023}}{}
+% \vspace{2pt}
+% \resumeSubItem {\href{http://ude.my/UC-2abd81b2-c85a-43aa-8d37-ebac4749a612}{100 Days Of Code By Angela Yu - October 2022}}{}
+% \vspace{2pt}
+% \resumeSubItem {\href{http://ude.my/UC-48d68e04-cbf5-4485-8dd6-e6fe8b35aa91}{Automate The Boring Stuff With Python - October 2022}}{}
+% \vspace{2pt}
+% \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+% \section{Volunteer Experience}
+%   \resumeSubHeadingListStart
+% 	\resumeSubheading
+%     {Point Blank}{Bengaluru, India}
+%     {Member of an elite multidisciplinary team of programmers from DSCE.}{Jan 2023-Present}
+
+%     % \vspace{10pt}\textbf{\large{Community Experience}}
+%     \resumeSubheading
+%     {LITSOC, DSCE}{Bengaluru, India}
+%     {Member of the Literary Society of Dayananda Sagar College Of Engineering.}{Jan 2023-Present}
+    
+
+% \resumeSubHeadingListEnd
+
+
+\end{document}
