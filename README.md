@@ -6,7 +6,7 @@ As I progress in my career and gain new skills and experiences, I update my resu
 
 ## Resumes
 
-- [First Resume: 27.12.22](https://github.com/Akash-Singh04/My-Resumes/blob/master/AKASH_SINGH_RESUME%20-%2027.12.22.pdf):My first attempt at crafting a resume using Canva fell short of professional standards. It lacked compatibility with automated screening tools, included unnecessary elements like a personal photograph, and lacked the sophistication expected in professional documents. With guidance from mentors, I transitioned to LaTeX, refining my resume's format and content to align with industry standards. The journey underscores the importance of continuous learning and adaptation in career development.
+- [First Resume: 27.12.22](https://github.com/Akash-Singh04/My-Resumes/blob/master/AKASH_SINGH_RESUME%20-%2027.12.22.pdf): My first attempt at crafting a resume using Canva fell short of professional standards. It lacked compatibility with automated screening tools, included unnecessary elements like a personal photograph, and lacked the sophistication expected in professional documents. With guidance from mentors, I transitioned to LaTeX, refining my resume's format and content to align with industry standards. The journey underscores the importance of continuous learning and adaptation in career development.
 
 ## Latest Resume
 
