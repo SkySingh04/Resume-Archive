@@ -8,4 +8,4 @@ As I progress in my career and gain new skills and experiences, I update my resu
 
 ## Latest Resume
 
-- [Latest Resume: 16.01.24](https://github.com/Akash-Singh04/My-Resumes/blob/master/main.tex): This is my latest resume in LaTeX format. Feel free to download and modify it as needed.
+- [Latest Resume](https://github.com/Akash-Singh04/My-Resumes/blob/master/main.tex): This is my latest resume in LaTeX format. Feel free to download and modify it as needed.
