@@ -19,9 +19,9 @@
 \usepackage{xcolor}
 \hypersetup{
     colorlinks,
-    linkcolor={red!50!black},
+    linkcolor={black},
     citecolor={blue!50!black},
-    urlcolor={blue!80!black}
+    urlcolor={black}
 }
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -47,48 +47,66 @@
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {\vspace{-2pt}}
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-5pt}
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
 
 \begin{document}
-
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
   \textbf{{\LARGE Akash Singh}} & Email: \href{mailto:akashsingh2210670@gmail.com}{akashsingh2210670@gmail.com}\\
-  \href{https://meetakash.vercel.app/}{Portfolio} & Mobile:~~~+91-938-259-8086 \\
-  \href{https://github.com/Akash-Singh04}{Github: Akash-Singh04} \\
+  \underline{\href{https://meetakash.vercel.app/}{Portfolio}} & \underline{\href{https://www.linkedin.com/in/akash-singh-a57081253/}{LinkedIn}} \\
+  \underline{\href{https://github.com/Akash-Singh04}{Github: Akash-Singh04}} & Mobile:~~~+91-938-259-8086 
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -98,27 +116,23 @@
 %   I have keen interest in computer science and public speaking. I enjoy socialising and building connections with people in my free time. I'm also interested in web development and data science, while also learning new technologies everyday. When I'm not tinkering with my laptop, I enjoy participating in debates, hackathons and other social events that further help me build my personality and improve my network
 	    
 \vspace{-5pt}
-\section{~~Education}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-        {Dayananda Sagar College Of Engineering}{Bengaluru, India}
-      {Bachelor of Engineering-Computer Science And Engineering;}{2022 - 2026}
-      \vspace{-5pt}
-    \resumeSubheading
-      {Delhi Public School}{Siliguri, India}
-      {12th Standard;  CGPA: 9.6}{2020-2022}
+        {Dayananda Sagar College Of Engineering}{CGPA: 9.65}
+      {Bachelor of Engineering-Computer Science And Engineering}{2022 - 2026}
       \vspace{-5pt}
     \resumeSubHeadingListEnd
 	    
-\vspace{-10pt}
+\vspace{-5pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, TypeScript, Golang}
+     \textbf{Languages}{: TypeScript, Golang, Python, JavaScript}
      
-    \textbf{Frameworks And Libraries}{: NodeJS, ExpressJS, React, Redux, NextJs, TailWind} 
+    \textbf{Frameworks And Libraries}{: NodeJS, ExpressJS, React, Redux, NextJs, TailWind, Firebase} 
      
-     \textbf{Databases And Tools}{: MongoDB, PostgreSQL, SQLite, Git, Github, CI/CD, Firebase} \\
+     \textbf{Databases And Tools}{: MongoDB, PostgreSQL, SQLite, GraphQL, Git, Github, CI/CD} \\
     
     }}
  \end{itemize}
@@ -127,33 +141,40 @@
 \section{Open Source Contribution}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Keploy}{\href{https://gist.github.com/Akash-Singh04/6583e1be7b05b818df7d5b224b37df67}{Contributions}}
-            {Open Source Contributor: Go, Bash, Github Actions, Tests, Mocks}{}
+            {\underline{\href{https://summerofcode.withgoogle.com/programs/2024/projects/XKj0YXC7}{Google Summer Of Code}}}
+            {May 2024 - Present}
+            {Keploy : Golang, Typescript, Scala, Lua, Svelte }{Part time : Remote}
             \resumeItemListStart
-                \item Enhanced {\href{https://github.com/keploy/keploy}{Keploy CLI}} via implementing \textbf{CLI Commands} with \textbf{Cobra} including \textbf{Update}, \textbf{Normalise} commands alongside adding \textbf{CLI Flags} such as \textbf{--version} flag, and \textbf{--enableANSIColor}.
-                \item Enhanced \textbf{Github Actions Workflow} for {\href{https://github.com/keploy/TestGPT}{TestGPT}} alongside various \textbf{Bug Fixes} And \textbf{Documentation} updates
-                to improve user experience,.
+                \item Developed a \textbf{GraphQL} server for Keploy CLI to allow for seamless execution of Recording and Replaying of Generated Tests via API calls using \textbf{eBPF}.
+                \item Integrated Keploy to various IDE's such as \textit{VsCode}, \textit{IntelliJ} and \textit{Neovim} via developing \textbf{cross-platform extensions} using various platform specific technologies.
+                \item Submitted over \underline{\href{https://gist.github.com/Akash-Singh04/6583e1be7b05b818df7d5b224b37df67}{15+ Pull Requests}} to various projects across Keploy integerating \textit{CLI commands and flags} using \textbf{Cobra}, \textit{Github Actions Workflow} for \textbf{TestGPT} and various Bug Fixes.
+                % \item Enhanced {\href{https://github.com/keploy/keploy}{Keploy CLI}} via implementing \textbf{CLI Commands} with \textbf{Cobra} including \textbf{Update}, \textbf{Normalise} commands alongside adding \textbf{CLI Flags} such as \textbf{--version} flag, and \textbf{--enableANSIColor}.
+                % \item Enhanced \textbf{Github Actions Workflow} for {\href{https://github.com/keploy/TestGPT}{TestGPT}} alongside various \textbf{Bug Fixes} And \textbf{Documentation} updates
+                % to improve user experience.\href{}{Contributions}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-12pt}
 %-----------Experience-----------------
 \section{Experience}
     \resumeSubHeadingListStart
-\resumeSubheading
-		{Intern @Bolesale}{December 2023 -  February 2024}
-		{Full Stack Developer : React, Firebase, Redux, Zustand}{}
+    \resumeSubheading
+		{\href{https://www.linkedin.com/company/swipegen/}{\underline{Swipegen}}}{February 2024 -  May 2024}
+		{Technical Trainer}{Part time : Banglore, India}
+		\resumeItemListStart
+        \item Spearheaded, developed, and delivered engaging training sessions on \textit{HackerRank} and \textit{LeetCode} platforms across various colleges in Bangalore, India.
+        \item Equipped learners with strategies and techniques to efficiently solve data structures and algorithmic challenges using \textbf{Python} and \textbf{Java}.
+        % \item \textbf{Spearheaded} comprehensive virtual instruction in Full Stack Development at CodingZen, providing insightful guidance on \textbf{front-end} and \textbf{back-end} technologies to a diverse cohort of students.
+        % \item Developed and delivered a \textit{dynamic curriculum}, integrating real-world projects and interactive sessions to facilitate \textit{hands-on learning experiences}, enabling students to grasp complex concepts effectively.
+		\resumeItemListEnd
+        \resumeSubheading
+		{\href{https://seller.bolesale.com/}{\underline{Bolesale}}}{December 2023 -  February 2024}
+		{Full Stack Developer : React, Firebase, Redux, Zustand}{Internship : Remote}
 		\resumeItemListStart
         \item Built robust applications using \textit{React}, \textit{Firebase} emphasizing \textbf{RESTful} architecture, \textbf{Advanced State Management} using \textit{Redux} and \textit{Zustand} and efficient \textbf{CRUD} operations .
         \item Collaborated within a multidisciplinary team to ensure adherence to \textbf{ACID} principles, ensuring data integrity and scalability while implementing \textbf{Version Control} with \textit{Git} for effective collaboration.
 		\resumeItemListEnd
     
- \resumeSubheading
-		{Intern @CodingZen}{December 2023 -  February 2024}
-		{Online Teaching (Full Stack)}{}
-		\resumeItemListStart
-        \item \textbf{Spearheaded} comprehensive virtual instruction in Full Stack Development at CodingZen, providing insightful guidance on \textbf{front-end} and \textbf{back-end} technologies to a diverse cohort of students.
-        \item Developed and delivered a \textit{dynamic curriculum}, integrating real-world projects and interactive sessions to facilitate \textit{hands-on learning experiences}, enabling students to grasp complex concepts effectively.
-		\resumeItemListEnd
+ 
 \resumeSubHeadingListEnd
 
 
@@ -161,43 +182,42 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{\textbf{Quiz Quest}$|$\emph{NextJs,Typescript,Firebase} 
+\resumeSubItem{\textbf{Quiz Quest }$|$\emph{ NextJs, Typescript, Firebase} 
 $|$
-\textmd{\href{https://github.com/Akash-Singh04/QuizQuest}{GitHub}}
+\textmd{\href{https://github.com/Akash-Singh04/QuizQuest}{\underline{GitHub}}}
 $|$
-\textmd{\href{https://quiz-quest-delta.vercel.app/}{Deployment}}
+\textmd{\href{https://quiz-quest-delta.vercel.app/}{\underline{{Deployment}}}}
 }{
-\vspace{-5pt}
+% \vspace{-5pt}
 \begin{itemize}
 \item The project facilitates administrators in \textit{attempting quizzes} and \textit{managing quiz data}, including \textit{scores}, \textit{completion times}, and s\textit{pecific quiz details} along with allowing users to create quizzes from \textbf{Excel Sheets}.
 \item Developed with \textit{Next.js} and \textit{TypeScript}, the project incorporates server-side rendering, seamless routing, strong typing, and improved code maintainability for an enhanced user experience and deployed on \textit{Vercel}.
 \item Integrated \textit{Firebase} for \textbf{real-time database management} and \textbf{user authentication}, leveraging \textit{Firestore} for data storage, \textit{Firebase Authentication} for secure access,and implementing \textbf{Admin Dashboard}.
 \end{itemize}
 }
-\vspace{-5pt}
-\resumeSubItem{\textbf{EduSync}$|$\emph{NextJs,Typescript,Firebase, EdgeStore ,Flask} 
+\vspace{-10pt}
+\resumeSubItem{\textbf{EduSync }$|$\emph{ NextJs, Typescript, Firebase, EdgeStore , Flask} 
 $|$
-\textmd{\href{https://github.com/Akash-Singh04/EduSync}{GitHub}}
+\textmd{\href{https://github.com/Akash-Singh04/EduSync}{\underline{GitHub}}}
 $|$
-\textmd{\href{https://edu-sync-phi.vercel.app/}{Deployment}}
+\textmd{\href{https://edu-sync-phi.vercel.app/}{\underline{Deployment}}}
 }{
-\vspace{-5pt}
+% \vspace{-5pt}
 \begin{itemize}
 \item Orchestrated the fusion of \textit{Next.js}, \textit{Firebase}, and \textit{TypeScript} to develop an innovative tutoring platform. Delivered a dynamic user experience while ensuring code integrity and scalability and deployed on \textit{Vercel}.
 % \item Leveraged Falcon 7B's advanced AI capabilities to enhance the platform with state-of-the-art \textbf{natural language processing} and integrated it into an \textbf{NLP Chatbot}.
 \item Engineered a robust backend utilizing \textit{Flask}, \textit{EdgeStore}, and \textit{Firebase}. Orchestrated \textbf{RESTful APIs}, proficient \textbf{CRUD operations}, and optimized data storage with \textbf{User Authentication} And \textbf{User Roles}.
 \end{itemize}
 }
-\vspace{-5pt}
-
-\resumeSubItem{\textbf{Motion Amplification Video (MAV)} $|$\emph{MERN,Tailwind,AWS}
+\vspace{-10pt}
+\resumeSubItem{\textbf{Motion Amplification Video (MAV)} $|$\emph{ MERN, Tailwind, AWS}
 $|$
-\textmd{\href{https://github.com/Akash-Singh04/Motion-Amplification-Video}{GitHub}}
+\textmd{\href{https://github.com/Akash-Singh04/Motion-Amplification-Video}{\underline{GitHub}}}
 $|$
-\textmd{\href{https://youtu.be/ygeVFEa4_oo}{Demo Video}
+\textmd{\href{https://youtu.be/ygeVFEa4_oo}{\underline{Demo Video}}
 }
 }{
-\vspace{-5pt}
+% \vspace{-5pt}
 \begin{itemize}
 \item Developed a pioneering \textbf{cloud-based solution} for revolutionizing \textbf{vibration analysis} via processing, extracting, amplifying and replaying motion features frame by frame, unveiling micro-scale defects.
 \item Implemented a \textbf{cloud-based dashboard} using \textit{React}, \textit{AWS S3 Bucket} and \textit{AWS Cloudfront} for users to upload video clips and view processed results, enhancing accessibility from any location.
