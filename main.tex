@@ -1,7 +1,7 @@
 %------------------------
 % Resume Template
 % Author : Akash Singh
-% Github : https://github.com/Akash-Singh04
+% Github : https://github.com/SkySingh04
 % License : DSCE
 %------------------------
 
@@ -107,8 +107,9 @@
 
 
   \textbf{{\LARGE Akash Singh}} & Email: \href{mailto:akashsingh2210670@gmail.com}{akashsingh2210670@gmail.com}\\
-  \underline{\href{https://meetakash.vercel.app/}{Portfolio}} ~ \underline{\href{https://dev.to/skysingh04}{Blog}}  & \underline{\href{https://www.linkedin.com/in/skysingh04/}{LinkedIn}} \\ 
-  \underline{\href{https://github.com/SkySingh04}{Github: SkySingh04}} & Mobile:~~~+91-xxx-xxx-xxxx 
+\underline{\href{https://skysingh.xyz/}{Portfolio}} ~ \underline{\href{https://github.com/SkySingh04}{Github}} ~ \underline{\href{https://www.linkedin.com/in/skysingh04/}{LinkedIn}} & Mobile: +91-9382598086
+  
+   
 \end{tabular*}
 
 \section{Education}
@@ -123,11 +124,11 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Typescript, Golang, Python, Rust}
+     \textbf{Languages}{: Golang, Typescript, Python}
      
-    \textbf{Technologies/Frameworks}{: GraphQL, NextJS, NodeJS, Kafka} 
+    \textbf{Technologies/Frameworks}{: GraphQL, NextJS, NodeJS, Kafka, Terraform} 
      
-     \textbf{Databases/Tools}{: MongoDB, PostgreSQL, Git, CI/CD, Docker, AWS, Kubernetes, Grafana} \\
+     \textbf{Databases/Tools}{: AWS, MongoDB, PostgreSQL, Git, CI/CD, Docker, Kubernetes, Monitoring} \\
     
     }}
  \end{itemize}
@@ -135,16 +136,31 @@
 %-----------Experience-----------------
 \section{Experience}
 \resumeSubHeadingListStart
+    \resumeSubheading
+    {\href{https://www.finalround.ai}{\underline{FinalRound AI}}}{April 2025 - Present}
+    {Junior Founding Engineer : Terraform, Kubernetes, Multi-Cloud, AI Agents}{}
+    \resumeItemListStart
+    \item Architected and migrated entire infrastructure to \textbf{Infrastructure as Code (IaC)} using \textbf{Terraform} across \textbf{AWS}, \textbf{Azure}, \textbf{GCP}, and \textbf{Alibaba Cloud}, ensuring multi-cloud compatibility and automation.
+    \item Deployed and managed \textbf{Kubernetes} clusters on \textbf{AKS}, implementing \textbf{ArgoCD} for GitOps-based deployments and \textbf{Atlantis} for Terraform workflow automation.
+\item Developed \textbf{AI agents} with \textbf{AGNO}, \textbf{N8N}, and \textbf{MCP} tools to create LLM-powered workflows and automate complex business processes.
+    \resumeItemListEnd
   \resumeSubheading
-{\href{https://mentorship.lfx.linuxfoundation.org/project/445a6158-3ba7-429e-b0e1-f7417ff9a724}{\underline{Linux Foundation Mentorship}}}{March 2025 - Present}
-  {LitmusChaos : Golang, Chaos Engineering, CI/CD, Kubernetes}{Part-Time : Bangalore, India}
+{\href{https://mentorship.lfx.linuxfoundation.org/project/445a6158-3ba7-429e-b0e1-f7417ff9a724}{\underline{Linux Foundation Mentorship}}}{March 2025 - May 2025}
+  {LitmusChaos : Golang, Chaos Engineering, CI/CD, Kubernetes}{}
   \resumeItemListStart
-\item Built the Chaos CI SDK to streamline \textit{chaos testing} in CI/CD pipelines, enabling seamless integration with \textbf{GitHub Actions}, \textbf{GitLab CI/CD}, and \textbf{Terraform}. 
+\item Built the Chaos CI SDK to streamline \textit{chaos testing} in CI/CD pipelines. This enabled seamless integration with \textbf{GitHub Actions}, \textbf{GitLab CI/CD}, and \textbf{Terraform}. 
 \item Revamped the \textit{Chaos CI Library} by migrating to LitmusChaos 3.x, optimizing CI/CD templates and Terraform integration to simplify \textit{chaos testing} in \textbf{IaC workflows}.
   \resumeItemListEnd
+          \resumeSubheading
+		{\href{https://www.linkedin.com/company/embeddings-co}{\underline{Embeddings Co}}}{March 2025 -  April 2025}
+		{Devops Engineer : Terraform, AWS, Kubernetes, ArgoCD}{}
+		\resumeItemListStart
+        \item Built end-to-end cloud infrastructure from scratch using \textbf{Terraform (IaC)} on \textbf{AWS}.
+\item Managed \textbf{Kubernetes} clusters and deployed microservices on \textbf{EKS} using \textbf{ArgoCD} for deployment.
+		\resumeItemListEnd
   \resumeSubheading
-{\href{https://www.linkedin.com/company/vanceapp}{\underline{Aspora (Vance)}}}{January 2025 - Present}
-  {Devops Engineer : Terraform, AWS, Monitoring, CI/CD}{Full-Time : Bangalore, India}
+{\href{https://www.linkedin.com/company/vanceapp}{\underline{Aspora (Vance)}}}{January 2025 - March 2025}
+  {Devops Engineer : Terraform, AWS, Monitoring, CI/CD}{}
   \resumeItemListStart
   \item Setup \textbf{Apache Airflow} on \textit{ECS} with \textit{EC2} along with \textit{ETL} Pipelines and \textit{DAGs} to reduce \textbf{\$10000} AWS Glue bill by \textbf{96\%}.
   \item Integrated \textbf{Promtail} with \textbf{Loki} and \textbf{Grafana} to set up monitoring on all \textit{microservices}, slashing the \textbf{\$4000} AWS Cloudwatch bill by \textbf{85\%}.
@@ -152,59 +168,45 @@
   \resumeItemListEnd
   \resumeSubheading
 {\href{https://cloudsek.com/}{\underline{CloudSEK}}}{August 2024 - October 2024}
-  {Backend Engineer : Golang, AWS, Kafka, OpenTelemetry, CI/CD}{Full-Time : Bangalore, India}
+  {Backend Engineer : Golang, AWS, Kafka, OpenTelemetry, CI/CD}{}
   \resumeItemListStart
-  \item Led the backend development of multiple microservices in \textit{CloudSEK Community Server} using \textbf{Golang (Chi)}, \textbf{PostgreSQL}, with \textbf{AWS SQS} and \textbf{Apache Kafka}.
-  \item Migrated the existing codebase to a \textbf{monorepo} structure,  and implemented monitoring with \textbf{Grafana}, \textbf{Loki}, and \textbf{Prometheus}.
-  \item Deployed microservices with \textbf{Kubernetes} and \textbf{Docker}, integrated \textbf{AWS S3} for storage, and automated CI/CD pipelines using \textbf{ArgoCD}.
+  \item Led the backend development of multiple microservices in \textit{CloudSEK Community Server} using \textbf{Golang}, \textbf{PostgreSQL}, with \textbf{AWS SQS} and \textbf{Apache Kafka} and deployed them with \textbf{Kubernetes} and \textbf{Docker}
+  \item Migrated the existing codebase to a \textbf{monorepo} structure,  and implemented monitoring with \textbf{Grafana}, \textbf{Loki}, and \textbf{Prometheus} .
   \resumeItemListEnd
   \resumeSubheading
 {\underline{\href{https://summerofcode.withgoogle.com/programs/2024/projects/XKj0YXC7}{Google Summer Of Code}}}
 {May 2024 - August 2024}
-{Keploy : Golang, Typescript, Scala, Bash, Svelte }{Part-Time : Remote}
+{Keploy : Golang, Typescript, Scala, Bash, Svelte}{}
 \resumeItemListStart
-    \item Integrated Keploy to \textit{VSCode} and \textit{IntelliJ} via developing \textbf{cross-platform extensions} and writing \textbf{Bash Scripts} and \textbf{CI CD Pipelines} for automated releases with over \textit{150k Downloads}.
+    \item Integrated Keploy to \textit{VSCode} and \textit{IntelliJ} via developing \textbf{cross-platform extensions} and writing \textbf{Bash Scripts} and \textbf{CI CD Pipelines} for automated releases with over \textbf{200k Downloads}.
     \item Submitted over \underline{\href{https://gist.github.com/SkySingh04/6583e1be7b05b818df7d5b224b37df67}{15 Pull Requests}} to various projects across Keploy integrating \textit{CLI commands and flags} using \textbf{Cobra}, \textit{Github Actions Workflow} for \textbf{TestGPT} and various Bug Fixes.
 \resumeItemListEnd
-        \resumeSubheading
-		{\href{https://seller.bolesale.com/}{\underline{Bolesale}}}{December 2023 -  February 2024}
-		{Full Stack Developer : React, Firebase, Redux, Zustand, GCP}{Internship : Remote}
-		\resumeItemListStart
-        \item Built robust applications using \textit{React}, \textit{Firebase} emphasizing \textbf{RESTful} architecture.
-       \item Integrated a \textbf{Payment Dashboard} using \textit{PhonePe} and deployed on \textbf{Google Cloud Platform}.
-		\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
 \vspace{-10pt}
 %-----------PROJECTS-----------------
 
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{\textbf{TracePr} $|$ \emph{Golang, Grafana, Prometheus, Datadog, LLMs, CI/CD}  $|$  \textmd{\href{https://github.com/SkySingh04/TracePR}{\underline{Github}}}}{  
-\begin{itemize}  
-\item 
-An AI tool that analyzes PRs to provide \textbf{observability} insights, create \textbf{dashboards}, and set \textbf{alerts} via \textbf{CI/CD}.
-\end{itemize}  
-}
-\vspace{-10pt}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeSubItem{\textbf{TracePr} $|$ \emph{Golang, Grafana, Prometheus, Datadog, LLMs, CI/CD}  $|$  \textmd{\href{https://github.com/SkySingh04/TracePR}{\underline{Github}}}}{  
+% \begin{itemize}  
+% \item 
+% An AI tool that analyzes PRs to provide \textit{observability} insights, create \textit{dashboards}, and set \textit{alerts} via \textbf{CI/CD}.
+% \end{itemize}  
+% }
+% \vspace{-10pt}
+% \resumeSubHeadingListEnd
+% \vspace{-5pt}
 
 %-----------Awards-----------------
 \section{Achievements}
 \begin{description}[font=$\bullet$]
 \item {Placed \href{https://www.linkedin.com/posts/skysingh04_hackglobal-switch2024-singapore-activity-7257330477970141184-g7VD?utm_source=share&utm_medium=member_desktop}{Top 9} \textbf{Worldwide} across 7 countries and 1st from  India at Hackglobal 2024 Singapore}
 \vspace{-5pt}
-\item {Placed \href{https://www.linkedin.com/posts/skysingh04_hackverse6-nitksuratkal-grandwinners-activity-7285302212522647553-v0hC?utm_source=share&utm_medium=member_desktop}{1st Among 1965 other participants at NITK Hackverse 5.0 Hackathon} - January 2025}
-\vspace{-5pt}
 \item {Selected for ACM India Winter School 2024 among 40 other students across India at A.V.V, Coimbatore}
 \vspace{-5pt}
-\item {Placed \href{https://www.linkedin.com/posts/akash-singh-a57081253_everyoneisashark-hackbangalore-everyoneisashark-activity-7195865460859416577-k-Mu?utm_source=share&utm_medium=member_desktop}{1st among 617 other participants in Hackbangalore 2024 Hackathon} - May 2024}
-\vspace{-5pt}
-\item {Placed \href{https://www.linkedin.com/posts/akash-singh-a57081253_hackorama-ai-ml-activity-7155577685312745472-r8Sm?utm_source=share&utm_medium=member_desktop}{1st among 35 other teams in Hack-o-Rama 2024 Hackathon} - January 2024}
-\vspace{-5pt}
-\item {Placed \href{https://www.linkedin.com/posts/akash-singh-a57081253_enigma2023-hackathonwin-leadership-activity-7144367368339636224-ZRHx?utm_source=share&utm_medium=member_desktop}{2nd  among 83 other teams in Engigma 2023 Hackathon} - December 2023}
+\item {Placed \textbf{1st} at \href{https://www.linkedin.com/posts/skysingh04_hackverse6-nitksuratkal-grandwinners-activity-7285302212522647553-v0hC?utm_source=share&utm_medium=member_desktop}{NITK Hackverse 5.0}, \href{https://www.linkedin.com/posts/akash-singh-a57081253_everyoneisashark-hackbangalore-everyoneisashark-activity-7195865460859416577-k-Mu?utm_source=share&utm_medium=member_desktop}{Hackbangalore 2024}, and \href{https://www.linkedin.com/posts/akash-singh-a57081253_hackorama-ai-ml-activity-7155577685312745472-r8Sm?utm_source=share&utm_medium=member_desktop}{Hack-o-Rama 2024}}
 \vspace{-5pt}
 \end{description}
 \end{document}
